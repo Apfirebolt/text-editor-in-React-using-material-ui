@@ -37,11 +37,10 @@ function App() {
           onChange={ value => getHTMLData(value) }
         />
       </ThemeProvider>
-      
+      <Button variant="contained" onClick={() => getData()}>Get Data</Button>
       <div>
         {ReactHtmlParser(initialData)}
       </div>
-      <Button variant="contained" onClick={() => getData()}>Hello World</Button>
     </div>
   );
 }

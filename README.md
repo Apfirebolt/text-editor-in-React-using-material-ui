@@ -34,6 +34,12 @@ The React app is configured to run by default on port 3000.
 - Can have hyperlinks and images.
 - Can parse HTML output from the editor to send to the back-end server.
 
+## Project Screenshots
+
+Just one screenshot is there. No routes exist, editor is implemented on the main page only which looks something like this. 
+
+![alt text](./screenshots/1.PNG)
+
 ## Deployment
 
 Docker deployment using Nginx to be added in the future.

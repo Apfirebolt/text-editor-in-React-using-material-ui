@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Button } from '@mui/material';
+import MUIRichTextEditor from "mui-rte";
+import { stateToHTML } from 'draft-js-export-html';
+import ReactHtmlParser from 'react-html-parser';
 import './App.css';
 
 function App() {
+
+  const [initialData, setInitialData] = useState('')
+
+  const save = (data) => {
+    console.log(data);
+  };
+
+  const getHTMLData = (value) => {
+    stateToHTML(value.getCurrentContent())
+    setInitialData(stateToHTML(value.getCurrentContent()))
+  }
+
+  const myTheme = createTheme({
+    // Set up your custom MUI theme here
+  });
+
+  const getData = () => {
+    console.log('Initial data ', initialData)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={myTheme}>
+        <MUIRichTextEditor
+          label="Type something here..."
+          onSave={save}
+          inlineToolbar={true}
+          onChange={ value => getHTMLData(value) }
+        />
+      </ThemeProvider>
+      
+      <div>
+        {ReactHtmlParser(initialData)}
+      </div>
+      <Button variant="contained" onClick={() => getData()}>Hello World</Button>
     </div>
   );
 }

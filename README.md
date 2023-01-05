@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Rich Text Editor in React using Material UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_👀 Medium like text editor in React 
 
-## Available Scripts
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+I was facing issues with implementing a Text Editor in React, previously I had a hassle-free implementation in Vue for one of the projects I have on Github. Many things did not work for me. I tried packages like React Slate, React-draft-wysiwyg and more. But, they had dependency related issues. Many of them lacked concrete examples. This package called **'mui-rte'** did work for me at last in this project bootstrapped with create-react-app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This also has some warnings though which I might address in the future, but I needed a quick solution for the time being.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements 🏃
 
-### `npm test`
+- Node
+- React
+- Material UI
+- Draft JS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Install  💥
 
-### `npm run build`
+```
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The React app is configured to run by default on port 3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Text Editor
+- Can have hyperlinks and images.
+- Can parse HTML output from the editor to send to the back-end server.
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Docker deployment using Nginx to be added in the future.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+_Easily set up a local development environment!_
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- clone
+- `npm install`
+- `npm start`
 
-## Learn More
+**Start coding!** 🎉
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone this repo on your machine, navigate to its location in the terminal and run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All contributions are welcome!  
